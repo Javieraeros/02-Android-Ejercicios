@@ -10,8 +10,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.javier.a02_android_ejerciciosclase.ActividadPrincipal">
 
-    <TextView
+    <EditText
+        android:id="@+id/texto"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:hint="@string/escribeaqui" />
+
+    <CheckBox
+        android:id="@+id/negrita"
+        android:text="Negrita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto"/>
+
+    <CheckBox
+        android:id="@+id/gigante"
+        android:text="Gigante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto"
+        android:layout_toRightOf="@id/negrita"/>
+
+    <CheckBox
+        android:id="@+id/minusculo"
+        android:text="Minúsculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto"
+        android:layout_toRightOf="@id/gigante"/>
+
+    <CheckBox
+        android:id="@+id/rojo"
+        android:text="Rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto"
+        android:layout_toRightOf="@id/minusculo"/>
 </RelativeLayout>
