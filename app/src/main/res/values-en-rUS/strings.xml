@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="escribeaqui">Write here!!</string>
+    <string name="enorme">Huge</string>
+    <string name="minusculo">Tiny</string>
+    <string name="negrita">Bold</string>
+    <string name="rojo">Red</string>
+    <string name="siguiente">Next</string>
+    <string name="volver">Back</string>
+    <string name="sumar">Add</string>
+    <string name="restar">Substract</string>
+    <string name="multiplicar">Multiply</string>
+    <string name="dividir">Divide</string>
+    <string name="calcular">Calculate</string>
 </resources>

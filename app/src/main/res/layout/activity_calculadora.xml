@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.javier.a02_android_ejerciciosclase.Calculadora">
+
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/simbolo"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="¿?"/>
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/igual"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="="/>
+
+        <EditText
+            android:id="@+id/resultado"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sumar"
+            android:text="@string/sumar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            />
+        <Button
+            android:id="@+id/restar"
+            android:text="@string/restar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            />
+        <Button
+            android:id="@+id/multiplicar"
+            android:text="@string/multiplicar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            />
+        <Button
+            android:id="@+id/dividir"
+            android:text="@string/dividir"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/calcular"
+            android:text="@string/calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

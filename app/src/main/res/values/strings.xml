@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">02-Android-Ejercicios clase</string>
     <string name="escribeaqui">Escribe Aquí!</string>
+    <string name="enorme">Enorme</string>
+    <string name="minusculo">Minúsculo</string>
+    <string name="negrita">Negrita</string>
+    <string name="rojo">Rojo</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="volver">Volver</string>
+    <string name="sumar">Sumar</string>
+    <string name="restar">Restar</string>
+    <string name="multiplicar">Multiplicar</string>
+    <string name="dividir">Dividir</string>
+    <string name="calcular">Calcular</string>
 </resources>

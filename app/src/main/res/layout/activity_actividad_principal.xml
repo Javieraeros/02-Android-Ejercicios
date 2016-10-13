@@ -16,35 +16,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/escribeaqui" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto">
+        <CheckBox
+            android:id="@+id/negrita"
+            android:text="@string/negrita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"/>
 
-    <CheckBox
-        android:id="@+id/negrita"
-        android:text="Negrita"
+        <CheckBox
+            android:id="@+id/gigante"
+            android:text="@string/enorme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"/>
+
+        <CheckBox
+            android:id="@+id/minusculo"
+            android:text="@string/minusculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"/>
+
+        <CheckBox
+            android:id="@+id/rojo"
+            android:text="@string/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cambiarPantalla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/texto"/>
-
-    <CheckBox
-        android:id="@+id/gigante"
-        android:text="Gigante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/texto"
-        android:layout_toRightOf="@id/negrita"/>
-
-    <CheckBox
-        android:id="@+id/minusculo"
-        android:text="Minúsculo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/texto"
-        android:layout_toRightOf="@id/gigante"/>
-
-    <CheckBox
-        android:id="@+id/rojo"
-        android:text="Rojo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/texto"
-        android:layout_toRightOf="@id/minusculo"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/siguiente"
+        android:layout_below="@id/ll"
+        android:onClick="next"/>
 </RelativeLayout>

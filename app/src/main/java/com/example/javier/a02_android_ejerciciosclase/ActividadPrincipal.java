@@ -1,5 +1,6 @@
 package com.example.javier.a02_android_ejerciciosclase;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,10 @@ public class ActividadPrincipal extends AppCompatActivity implements CompoundBut
     private CheckBox negrita,enorme,pequeño,rojo;
     private boolean negritaOn,enormeOn,pequeñoOn,rojoOn;
 
+    /**
+     * Creación de la actividad
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +44,11 @@ public class ActividadPrincipal extends AppCompatActivity implements CompoundBut
 
     }
 
-
+    /**
+     * ÇComprobación de que checkbox se ha tocado
+     * @param buttonView
+     * @param isChecked
+     */
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         switch (buttonView.getId()){
@@ -86,5 +95,14 @@ public class ActividadPrincipal extends AppCompatActivity implements CompoundBut
                 }
                 break;
         }
+    }
+
+    /**
+     * Método que hace que la app pase a la siguiente página
+     * @param v
+     */
+    public void next(View v){
+        Intent calc=new Intent(this,Calculadora.class);
+        startActivity(calc);
     }
 }
