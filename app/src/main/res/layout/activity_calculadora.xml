@@ -94,8 +94,8 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/calcular"
-            android:text="@string/calcular"
+            android:id="@+id/atras"
+            android:text="@string/atras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
