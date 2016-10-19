@@ -11,5 +11,5 @@
     <string name="restar">Substract</string>
     <string name="multiplicar">Multiply</string>
     <string name="dividir">Divide</string>
-    <string name="calcular">Calculate</string>
+    <string name="atras">Back</string>
 </resources>
